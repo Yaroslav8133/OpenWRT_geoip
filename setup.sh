@@ -24,3 +24,6 @@ chmod +x /tmp/check_and_download.sh
 
 # Добавление в crontab
 (crontab -l 2>/dev/null; echo "* * * * * /tmp/check_and_download.sh") | crontab -
+
+# Сообщение об установке
+echo "Скрипт успешно установлен и добавлен в cron"
