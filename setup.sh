@@ -22,8 +22,11 @@ EOF
 # Даем права на выполнение
 chmod +x /tmp/check_and_download.sh
 
-# Добавление в crontab
-(crontab -l 2>/dev/null; echo "* * * * * /tmp/check_and_download.sh") | crontab -
+# Добавление в crontab, если такой записи еще нет
+CRON_JOB="* * * * * /tmp/check_and_download.sh"
+if ! crontab -l | grep -qF "$CRON_JOB"; then
+    (crontab -l 2>/dev/null; echo "$CRON_JOB") | crontab -
+fi
 
 # Сообщение об установке
-echo "Скрипт успешно установлен и добавлен в cron"
+echo "Скрипт успешно установлен и добавлен в cron" | tee /dev/tty
