@@ -6,16 +6,16 @@ cat << 'EOF' > /tmp/check_and_download.sh
 
 # Путь к файлам
 GEOIP_FILE="/usr/share/xray/geoip.dat"
-LOYALSOLDIER_FILE="/usr/share/xray/LoyalsoldierSite.dat"
+GEOSITE_FILE="/usr/share/xray/geosite.dat"
 
 # Проверка файла geoip.dat
 if [ ! -f "$GEOIP_FILE" ] || [ ! -s "$GEOIP_FILE" ]; then
-  /usr/bin/curl -L -H "Accept: application/octet-stream" -o "$GEOIP_FILE" "https://github.com/1andrevich/antifilter-geoip/releases/latest/download/geoip.dat"
+  /usr/bin/curl -L -H "Accept: application/octet-stream" -o "$GEOIP_FILE" "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat"
 fi
 
 # Проверка файла LoyalsoldierSite.dat
-if [ ! -f "$LOYALSOLDIER_FILE" ] || [ ! -s "$LOYALSOLDIER_FILE" ]; then
-  /usr/bin/curl -L -H "Accept: application/octet-stream" -o "$LOYALSOLDIER_FILE" "https://github.com/1andrevich/antifilter-domain/releases/latest/download/geosite.dat"
+if [ ! -f "$GEOSITE_FILE" ] || [ ! -s "$GEOSITE_FILE" ]; then
+  /usr/bin/curl -L -H "Accept: application/octet-stream" -o "$GEOSITE_FILE" "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat"
 fi
 EOF
 
