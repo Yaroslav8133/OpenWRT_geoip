@@ -13,7 +13,7 @@ if [ ! -f "$GEOIP_FILE" ] || [ ! -s "$GEOIP_FILE" ]; then
   /usr/bin/curl -L -H "Accept: application/octet-stream" -o "$GEOIP_FILE" "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat"
 fi
 
-# Проверка файла LoyalsoldierSite.dat
+# Проверка файла geosite.dat
 if [ ! -f "$GEOSITE_FILE" ] || [ ! -s "$GEOSITE_FILE" ]; then
   /usr/bin/curl -L -H "Accept: application/octet-stream" -o "$GEOSITE_FILE" "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat"
 fi
