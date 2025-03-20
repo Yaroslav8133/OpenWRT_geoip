@@ -17,4 +17,4 @@
 2. Скачайте и запустите скрипт с помощью следующей команды:
 
    ```sh
-   bash <(curl -s https://raw.githubusercontent.com/Vinbongun/OpenWRT_geoip/main/setup.sh)
+   bash <(curl -s https://raw.githubusercontent.com/Yaroslav8133/OpenWRT_geoip/main/setup.sh)
