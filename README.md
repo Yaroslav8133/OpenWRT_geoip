@@ -5,7 +5,7 @@
 В качестве источника фаилов используются:
 https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat
 и
-https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.day
+https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat
 
 ### Зачем это нужно
 Файлы `geoip.dat` и `geosite.dat` являются критически важными для корректной работы VPN.
