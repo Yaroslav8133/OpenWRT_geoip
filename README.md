@@ -2,6 +2,10 @@
 
 ## Описание
 Этот скрипт предназначен для автоматического обновления файлов GeoIP и Geosite, необходимых для работы VPN на роутере с установленным OpenWRT. 
+В качестве источника фаилов используются:
+https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat
+и
+https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.day
 
 ### Зачем это нужно
 Файлы `geoip.dat` и `geosite.dat` являются критически важными для корректной работы VPN.
